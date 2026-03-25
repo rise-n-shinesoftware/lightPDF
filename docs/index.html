@@ -4,12 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lightPDF - Blazing-Fast Document Viewer</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="lightPDF is a blazing-fast, minimalist, and offline-first document viewer for Windows. Powered by Rust and Tauri, it natively supports PDF, EPUB, CBZ, DOCX, and more.">
+    <meta name="keywords" content="PDF viewer, fast PDF reader, lightweight document viewer, offline PDF, CBZ reader, EPUB reader, Windows PDF app">
+    <meta name="author" content="RisenShine Softwares">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rishabh-153.github.io/lightPDF/">
+
+    <!-- Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rishabh-153.github.io/lightPDF/">
+    <meta property="og:title" content="lightPDF - Blazing-Fast Document Viewer">
+    <meta property="og:description" content="A minimalist, high-performance document viewer. Reads PDF, EPUB, CBZ, and more with offline-first privacy.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rishabh-153.github.io/lightPDF/">
+    <meta property="twitter:title" content="lightPDF - Blazing-Fast Document Viewer">
+    <meta property="twitter:description" content="A minimalist, high-performance document viewer. Reads PDF, EPUB, CBZ, and more with offline-first privacy.">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-blue-50 via-white to-purple-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen selection:bg-blue-200">
     
-    <main class="flex-grow flex flex-col justify-center items-center text-center px-4 py-16">
-        <div class="max-w-4xl mx-auto">
+    <!-- Navigation -->
+    <header class="w-full max-w-6xl mx-auto px-6 py-6 flex justify-between items-center z-10 relative">
+        <div class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 tracking-tighter">lightPDF.</div>
+        <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+            <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
+            <a href="#formats" class="hover:text-blue-600 transition-colors">Supported Formats</a>
+            <a href="https://github.com/rishabh-153/lightPDF" target="_blank" class="hover:text-blue-600 transition-colors">GitHub Repo</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center px-4 w-full">
+        <!-- Hero Section -->
+        <section class="max-w-5xl mx-auto text-center pt-10 pb-20">
             <h1 class="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-6 tracking-tight drop-shadow-sm">lightPDF</h1>
             <p class="text-2xl text-gray-600 mb-10">
                 A blazing-fast, minimalist, and high-performance document viewer. <br/> Built with React, Rust, and Tauri.
@@ -29,7 +60,18 @@
                 <p class="text-xs text-gray-400 mt-2">Free Tier available. Pro Tier requires a license key.</p>
             </div>
 
-            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <!-- App UI Mockup / Screenshot Placeholder -->
+            <div class="mt-16 w-full max-w-4xl mx-auto aspect-video bg-white/40 backdrop-blur-xl border border-white/60 shadow-2xl rounded-2xl overflow-hidden relative flex items-center justify-center">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5"></div>
+                <!-- TODO: Replace this paragraph with an <img src="screenshot.png" /> of your app -->
+                <p class="text-gray-400 font-medium z-10 text-lg">[ App Interface Screenshot Placeholder ]</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="max-w-5xl mx-auto py-16 w-full text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Why choose lightPDF?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
                 <div class="bg-white/80 backdrop-blur-md p-8 rounded-3xl shadow-lg border border-white hover:shadow-xl transition-shadow">
                     <h3 class="font-bold text-xl mb-3 text-gray-800">⚡ Offline-First</h3>
                     <p class="text-gray-600 leading-relaxed">Your documents never leave your machine. All rendering and extraction happens entirely locally with zero telemetry on your files.</p>
@@ -43,7 +85,19 @@
                     <p class="text-gray-600 leading-relaxed">Enjoy a beautifully clean interface subsidized by unobtrusive ads, or upgrade to a paid license for a completely ad-free experience.</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Supported Formats Section -->
+        <section id="formats" class="max-w-4xl mx-auto py-16 w-full text-center border-t border-gray-200/50">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Reads everything you throw at it.</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-blue-700">PDF</span>
+                <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-blue-700">EPUB & MOBI</span>
+                <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-purple-700">CBZ & CBR</span>
+                <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-gray-700">Office (DOCX, XPS)</span>
+                <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-gray-700">Images (PNG, WEBP)</span>
+            </div>
+        </section>
     </main>
 
     <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-200/60 bg-white/50 backdrop-blur-sm relative z-10">
