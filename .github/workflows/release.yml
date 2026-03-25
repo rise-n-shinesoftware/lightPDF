@@ -28,13 +28,6 @@ jobs:
       - name: Install Frontend Dependencies
         run: npm install
 
-      - name: Download PDFium Engine (Required by Tauri Backend)
-        shell: bash
-        run: |
-          curl -L -o pdfium.tgz https://github.com/bblanchon/pdfium-binaries/releases/download/chromium/6363/pdfium-win-x64.tgz
-          tar -xzf pdfium.tgz
-          cp bin/pdfium.dll src-tauri/
-
       - name: Build and Publish Tauri App
         uses: tauri-apps/tauri-action@v0
         env:
