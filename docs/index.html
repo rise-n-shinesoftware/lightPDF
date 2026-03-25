@@ -34,7 +34,8 @@
         <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
             <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
             <a href="#formats" class="hover:text-blue-600 transition-colors">Supported Formats</a>
-            <a href="https://github.com/rishabh-153/lightPDF" target="_blank" class="hover:text-blue-600 transition-colors">GitHub Repo</a>
+            <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+            <a href="https://github.com/rise-n-shinesoftware/lightPDF" target="_blank" class="hover:text-blue-600 transition-colors">GitHub Repo</a>
         </nav>
     </header>
 
@@ -125,6 +126,20 @@
                 <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-purple-700">CBZ & CBR</span>
                 <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-gray-700">Office (DOCX, XPS)</span>
                 <span class="px-5 py-3 bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 font-bold text-gray-700">Images (PNG, WEBP)</span>
+            </div>
+        </section>
+
+        <!-- About the Creator Section -->
+        <section id="about" class="max-w-4xl mx-auto py-16 w-full text-center">
+            <div class="about-card opacity-0 translate-y-8 transition-all duration-700 ease-out">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">A Note from the Creator</h2>
+                <div class="flex flex-col items-center">
+                    <div class="max-w-2xl">
+                        <p class="text-lg text-gray-600 leading-relaxed">
+                            Hi, I'm Rishabh. My goal is to develop easy-to-use software that solves real-world problems without the bloat. In a digital landscape filled with complex and intrusive applications, I believe in building tools that are simple, fast, and respect your privacy. lightPDF is the first step on this journey, born from a desire for a document viewer that just works. I hope you enjoy using it as much as I enjoyed building it.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -223,6 +238,10 @@
             }, observerOptions);
 
             document.querySelectorAll('.feature-card').forEach(card => {
+                observer.observe(card);
+            });
+
+            document.querySelectorAll('.about-card').forEach(card => {
                 observer.observe(card);
             });
         });
