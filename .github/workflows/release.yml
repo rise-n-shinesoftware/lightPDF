@@ -13,7 +13,7 @@ jobs:
   release:
     strategy:
       matrix:
-        platform: [windows-latest]
+        platform: [macos-latest, ubuntu-22.04, windows-latest]
     runs-on: ${{ matrix.platform }}
     
     steps:
@@ -30,6 +30,30 @@ jobs:
 
       - name: Install Frontend Dependencies
         run: npm install
+
+      - name: Install Linux Dependencies
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libayatana-appindicator3-dev librsvg2-dev
+
+      - name: Download PDFium Engine
+        shell: bash
+        run: |
+          if [ "${{ matrix.platform }}" == "windows-latest" ]; then
+            URL="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-win-x64.tgz"
+            LIB_FILE="pdfium.dll"
+          elif [ "${{ matrix.platform }}" == "macos-latest" ]; then
+            URL="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-mac-arm64.tgz"
+            LIB_FILE="libpdfium.dylib"
+          elif [ "${{ matrix.platform }}" == "ubuntu-22.04" ]; then
+            URL="https://github.com/bblanchon/pdfium-binaries/releases/latest/download/pdfium-linux-x64.tgz"
+            LIB_FILE="libpdfium.so"
+          fi
+          curl -L -o pdfium.tgz $URL
+          tar -xf pdfium.tgz
+          mkdir -p src-tauri
+          cp bin/$LIB_FILE src-tauri/
 
       - name: Build and Publish Tauri App
         uses: tauri-apps/tauri-action@v0
