@@ -1,0 +1,19 @@
+RisenShine Softwares - Privacy Policy
+Effective Date: [Current Date]
+
+1. LOCAL PROCESSING GUARANTEE
+RisenShine Document Viewer is an "Offline-First" application. We guarantee that your documents, files, and their contents are NEVER uploaded to our servers or any third-party servers. All rendering and extraction (e.g., PDF, CBZ parsing) occurs entirely on your local machine.
+
+2. DATA WE COLLECT
+We collect minimal telemetry to improve the software:
+- Crash reports (optional).
+- License validation requests (Email, First Name, Last Name, and IP Address for fraud prevention).
+
+3. ADVERTISEMENTS (FREE TIER ONLY)
+If you use the Free Tier, the Software displays advertisements provided by third-party networks (e.g., Google AdSense). These networks may collect your IP address and basic device information to serve relevant ads. Activating a paid license entirely disables this module and its associated data collection.
+
+4. DATA STORAGE
+Reading history, favorites, and settings are saved locally in your OS AppData folder. You can clear this data at any time via the Application Settings menu.
+
+5. CHANGES TO POLICY
+We may update this policy periodically. Continued use of the Software implies acceptance.

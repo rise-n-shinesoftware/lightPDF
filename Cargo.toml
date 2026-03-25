@@ -1,0 +1,37 @@
+[package]
+name = "lightpdf"
+version = "0.0.1"
+description = "A lightweight, high-performance document viewer"
+authors = ["RisenShineSoftware"]
+license = "Proprietary"
+repository = ""
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.6", features = [ "dialog-all", "fs-read-file", "shell-open"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# App specific dependencies
+pdfium-render = { version = "0.8.37", features = ["thread_safe"] }
+image = "0.25"
+base64 = "0.21.7"
+keyring = "2.3.2"
+hmac = "0.12.1"
+sha2 = "0.10.8"
+data-encoding = "2.5.0"
+subtle = "2.5.0"
+
+[features]
+# this feature is used for production builds or when `devPath` points to the filesystem
+# DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
+
+[[bin]]
+name = "lightpdf"
+path = "main.rs"

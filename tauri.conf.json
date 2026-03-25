@@ -1,0 +1,56 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "dist"
+  },
+  "package": {
+    "productName": "lightPDF",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "dialog": {
+        "all": true
+      },
+      "fs": {
+        "readFile": true,
+        "scope": []
+      },
+      "shell": {
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.risenshinesoftware.lightpdf",
+      "publisher": "Rise-n-Shine Software",
+      "resources": [
+        "src-tauri/pdfium.dll"
+      ],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico",
+        "icons/icon.png"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 768,
+        "resizable": true,
+        "title": "lightPDF Document Viewer",
+        "width": 1024
+      }
+    ]
+  }
+}

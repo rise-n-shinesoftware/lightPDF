@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+dist/
+npm-debug.log*
+.env
+.env.local
+
+# Rust & Tauri
+target/
+src-tauri/target/
+**/*.rs.bk
+
+# OS Generated
+.DS_Store
+Thumbs.db
+Thumbs.db:encryptable

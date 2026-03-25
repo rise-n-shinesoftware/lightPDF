@@ -1,0 +1,29 @@
+# RisenShine Softwares - Terms of Service
+
+**Effective Date:** [Current Date]
+
+## 1. ACCEPTANCE OF TERMS
+By downloading, installing, or using the RisenShine Document Viewer ("Software"), you agree to be bound by these Terms of Service.
+
+## 2. LICENSE AND USAGE
+We grant you a personal, non-exclusive, non-transferable license to use the Software. 
+- **Free Tier:** Includes third-party advertisements. You may not block, obscure, or tamper with the ad-serving mechanisms.
+- **Paid Tier:** Requires the purchase of a valid License Key, which grants an ad-free experience.
+
+## 3. OWNERSHIP
+The Software, including its design, code, and integrated algorithms, is the exclusive property of © RisenShine Softwares.
+
+## 4. RESTRICTIONS
+You shall not:
+- Reverse engineer, decompile, or attempt to extract the License Generation logic.
+- Distribute unauthorized or pirated license keys.
+- Resell the Software without explicit written permission.
+
+## 5. LIMITATION OF LIABILITY
+The Software is provided "AS IS". To the maximum extent permitted by law, RisenShine Softwares shall not be liable for any data loss, file corruption, or indirect damages arising from the use of the Software.
+
+## 6. TERMINATION
+We reserve the right to revoke license keys and terminate your usage rights if you violate these terms.
+
+## 7. CONTACT
+For support, contact [risenshinesoftware@gmail.com](mailto:risenshinesoftware@gmail.com).

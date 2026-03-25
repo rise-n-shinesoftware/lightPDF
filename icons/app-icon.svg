@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Base flat rounded rectangle -->
+  <rect width="1024" height="1024" rx="224" fill="#2563EB"/>
+  <!-- Document shape -->
+  <path d="M300 200 h300 l160 160 v420 a40 40 0 0 1 -40 40 H300 a40 40 0 0 1 -40 -40 V240 a40 40 0 0 1 40 -40 z" fill="#FFFFFF"/>
+  <!-- Folded corner -->
+  <path d="M600 200 v160 h160 Z" fill="#E5E7EB"/>
+  <!-- Fast Lightning element -->
+  <path d="M520 400 L400 580 h90 v160 l120 -200 h-90 l30 -140 z" fill="#F59E0B"/>
+</svg>
