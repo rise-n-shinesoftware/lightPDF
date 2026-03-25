@@ -39,5 +39,5 @@ jobs:
           tagName: app-v__VERSION__ # The action automatically replaces \_\_VERSION\_\_ with the package.json version
           releaseName: 'lightPDF v__VERSION__'
           releaseBody: 'See the assets below to download and install this version.'
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
