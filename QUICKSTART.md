@@ -2,7 +2,23 @@
 
 Welcome to **lightPDF**, a blazing-fast, minimalist, and high-performance document viewer built with React, Rust, and Tauri.
 
-## 🚀 Prerequisites
+## � Inspiration & The Problem
+
+The idea for **lightPDF** was born out of pure frustration with the current state of desktop document viewers. Industry standards like Adobe Acrobat have become notoriously bloated—shipping with heavy background processes, slow startup times, and forced cloud integrations just to read a local file. Even historically lightweight alternatives like SumatraPDF are gradually accumulating feature creep and feeling heavier over time, while their user interfaces have remained visually dated.
+
+I wanted to solve this by building a viewer that opens instantly, looks beautiful, and strictly respects system resources and user privacy.
+
+### Approach & Process Evolution
+
+When working towards the launch, the architecture evolved significantly to meet these goals. Initially, I experimented with pure web technologies and Electron, but that completely defeated the goal of a "lightweight" application. To achieve the blazing-fast requirement, I pivoted the approach:
+
+1. **Framework Shift:** I adopted **Tauri** instead of Electron to drastically reduce the memory footprint and app bundle size.
+2. **Rendering Bottleneck:** I quickly realized that JavaScript-based PDF rendering (like PDF.js) wasn't fast enough for massive comic book archives (CBZ/CBR) or graphics-heavy PDFs. 
+3. **Native Integration:** To solve this, I overhauled the backend in **Rust**, integrating directly with the native C++ **PDFium** engine. 
+
+This hybrid approach—pushing all the heavy rendering to a hyper-optimized native pipeline while maintaining a fluid, modern **React** frontend—was the breakthrough that allowed lightPDF to deliver extreme performance without sacrificing aesthetics.
+
+## �🚀 Prerequisites
 
 Before you begin, ensure your development environment has the following installed:
 - **Node.js** (v18 or higher)
