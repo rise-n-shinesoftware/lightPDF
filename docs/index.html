@@ -34,8 +34,7 @@
         <nav class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
             <a href="#features" class="hover:text-blue-600 transition-colors">Features</a>
             <a href="#formats" class="hover:text-blue-600 transition-colors">Supported Formats</a>
-            <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
-            <a href="https://github.com/rise-n-shinesoftware/lightPDF" target="_blank" class="hover:text-blue-600 transition-colors">GitHub Repo</a>
+            <a href="https://github.com/rishabh-153/lightPDF" target="_blank" class="hover:text-blue-600 transition-colors">GitHub Repo</a>
         </nav>
     </header>
 
@@ -62,23 +61,23 @@
             </div>
 
             <!-- Screenshot Slideshow -->
-            <!-- TODO: Replace 'screenshot-1.png', 'screenshot-2.png', etc., with your actual file names. -->
+            <!-- TODO: Replace 'screenshot-1.png', 'screenshot-2.png', etc., with your exact file names (case-sensitive!) -->
             <div id="slideshow-container" class="mt-16 w-full max-w-4xl mx-auto aspect-video shadow-2xl rounded-2xl overflow-hidden relative group bg-gray-200">
                 <!-- Slides -->
                 <div class="slide relative w-full h-full hidden duration-700 ease-in-out">
-                    <img src="screenshot-1.png" class="absolute block w-full h-full object-contain" alt="Clean and intuitive user interface of lightPDF">
+                    <img src="home.png" class="absolute block w-full h-full object-contain" alt="Clean and intuitive user interface of lightPDF">
                     <div class="absolute bottom-0 w-full bg-black/50 text-white text-center p-3 text-lg font-semibold backdrop-blur-sm">Clean, Intuitive UI</div>
                 </div>
                 <div class="slide relative w-full h-full hidden duration-700 ease-in-out">
-                    <img src="screenshot-2.png" class="absolute block w-full h-full object-contain" alt="Feature-rich interface showing tabs and sidebar">
+                    <img src="preview.png" class="absolute block w-full h-full object-contain" alt="Feature-rich interface showing tabs and sidebar">
                     <div class="absolute bottom-0 w-full bg-black/50 text-white text-center p-3 text-lg font-semibold backdrop-blur-sm">Feature-Rich Interface</div>
                 </div>
                 <div class="slide relative w-full h-full hidden duration-700 ease-in-out">
-                    <img src="screenshot-3.png" class="absolute block w-full h-full object-contain" alt="Demonstration of lightPDF's lightweight performance">
+                    <img src="hidemenu.png" class="absolute block w-full h-full object-contain" alt="Demonstration of lightPDF's lightweight performance">
                     <div class="absolute bottom-0 w-full bg-black/50 text-white text-center p-3 text-lg font-semibold backdrop-blur-sm">Lightweight & Resource-Friendly</div>
                 </div>
                 <div class="slide relative w-full h-full hidden duration-700 ease-in-out">
-                    <img src="screenshot-4.png" class="absolute block w-full h-full object-contain" alt="lightPDF working offline with local files">
+                    <img src="magnifier.png" class="absolute block w-full h-full object-contain" alt="lightPDF working offline with local files">
                     <div class="absolute bottom-0 w-full bg-black/50 text-white text-center p-3 text-lg font-semibold backdrop-blur-sm">Fast and Offline</div>
                 </div>
 
@@ -129,19 +128,6 @@
             </div>
         </section>
 
-        <!-- About the Creator Section -->
-        <section id="about" class="max-w-4xl mx-auto py-16 w-full text-center">
-            <div class="about-card opacity-0 translate-y-8 transition-all duration-700 ease-out">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8">A Note from the Creator</h2>
-                <div class="flex flex-col items-center">
-                    <div class="max-w-2xl">
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            Hi, I'm Rishabh. My goal is to develop easy-to-use software that solves real-world problems without the bloat. In a digital landscape filled with complex and intrusive applications, I believe in building tools that are simple, fast, and respect your privacy. lightPDF is the first step on this journey, born from a desire for a document viewer that just works. I hope you enjoy using it as much as I enjoyed building it.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-200/60 bg-white/50 backdrop-blur-sm relative z-10">
@@ -238,10 +224,6 @@
             }, observerOptions);
 
             document.querySelectorAll('.feature-card').forEach(card => {
-                observer.observe(card);
-            });
-
-            document.querySelectorAll('.about-card').forEach(card => {
                 observer.observe(card);
             });
         });
